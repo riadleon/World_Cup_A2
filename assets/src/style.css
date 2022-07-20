@@ -155,3 +155,26 @@ footer h2 {
     color: #B9B9B9;
     margin-top: 5%;
 }
+
+/* Media Queries */
+/* Mobile View */
+
+@media only screen and (max-width: 688px) {
+    .header-content {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .half-width img {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+
+
+
+
+}

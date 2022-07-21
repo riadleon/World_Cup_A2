@@ -160,6 +160,15 @@ footer h2 {
 /* Mobile View */
 
 @media only screen and (max-width: 688px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
     .header-content {
         width: 100%;
         height: auto;
@@ -173,8 +182,43 @@ footer h2 {
 
     }
 
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-content {
+
+        flex-direction: column;
+        align-items: center;
+    }
 
 
 
+
+
+}
+
+/* Tab devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .header-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .side-bar {
+        flex-direction: row-reverse;
+    }
+
+    .match-container  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
